@@ -51,11 +51,60 @@ h1 {
 
 .mailing-list-form-container > h1:first-child {
     margin: 72px 0 0 var(--leftContainerInsetMargin);
+    
+}
+
+#details-form {
+    display: inline-block;
 }
 
 #newsletter-subtext {
-    margin: 24px 0 0 var(--leftContainerInsetMargin);
-    font-family: monospace;
-    font-size: 1.25em;
+    margin: 36px 0 0 var(--leftContainerInsetMargin);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-right: 36px;
+    letter-spacing: 0.035em;
+    font-size: 1.7em;
     line-height: 1.4em;
+    color: white;
+}
+
+
+.details-form-container {
+    padding: 0 var(--leftContainerInsetMargin) 0 var(--leftContainerInsetMargin);
+    text-align: center;
+}
+
+.input-form-fields {
+    padding: 6px 0 12px 0;
+    width: 280px;
+    background: none;
+    border: none;
+    border-bottom: 4px solid cornflowerblue;
+}
+
+.input-form-fields::placeholder {
+    color: white;
+    font-size: 1.5em;
+    text-align: start;
+    font-family: 'DM Mono';
+    margin: none;
+}
+
+
+label > i {
+    color: white
+}
+
+
+.form-element-wrapper {
+    display: flex; 
+    margin-top: 64px;
+}
+
+.label-wrapper {
+    width: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-right: 16px;
 }
