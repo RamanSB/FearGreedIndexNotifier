@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function App() {
+
+  function handleFormSubmit(event: React.SyntheticEvent) {
+      event.preventDefault();
+  }
+
   return (
     <div className="app-container">
       <div className="mailing-list-form-container">
@@ -14,7 +19,7 @@ function App() {
           <p id="newsletter-subtext">
             Do you find yourself constantly checking the crypto markets? 
             Distracted due to the volatility? 
-            Has it only been 5 minutes since you last checked your blockfolio...
+            Has it only been 5 minutes since you last checked your blockfolio.
             </p>
         </div>
         <div className="details-form-container">
@@ -27,11 +32,15 @@ function App() {
               <div className="label-wrapper"><label htmlFor="phone-field"><i className="fa fa-mobile fa-2x"></i></label></div>
               <input id="phone-field" className="input-form-fields" type="phone" placeholder="+44 7939323933"/>
             </div>
-            
+            <div className="submit-btn-container">
+              <button className="submit-btn" onSubmit={handleFormSubmit}>Click To Subscribe</button>
+            </div>
+
             
           </form>
         </div>
       </div>
+      
       <div style={{border: "2px dashed black"}}>
           
       </div>

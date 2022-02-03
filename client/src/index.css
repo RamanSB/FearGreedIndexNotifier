@@ -19,8 +19,8 @@ body {
 
 .app-container {
     display: grid;
-    width: 82vw;
-    height: 82vh;
+    width: 80vw;
+    height: 80vh;
     margin: 100px auto 0px auto;
     background: linear-gradient(270deg, var(--colorPrimary) , var(--colorSecondary));
     box-shadow: 1px 1px 16px 4px var(--colorAccentSecondary);
@@ -70,24 +70,36 @@ h1 {
 
 
 .details-form-container {
-    padding: 0 var(--leftContainerInsetMargin) 0 var(--leftContainerInsetMargin);
+    margin: 24px var(--leftContainerInsetMargin) 0 var(--leftContainerInsetMargin);
+    padding: 16px 16px 32px 16px;
     text-align: center;
+    border: 2px solid blanchedalmond;
+    box-shadow: 1px 1px 4px 2px crimson;
 }
 
 .input-form-fields {
     padding: 6px 0 12px 0;
-    width: 280px;
+    width: 340px;
     background: none;
     border: none;
+    font-size: 1.5em;
     border-bottom: 4px solid cornflowerblue;
 }
 
 .input-form-fields::placeholder {
     color: white;
-    font-size: 1.5em;
     text-align: start;
     font-family: 'DM Mono';
     margin: none;
+}
+
+.input-form-fields:focus {
+    outline: none;
+    font-family: 'DM Mono';
+}
+
+.input-form-fields:default {
+    font-family: 'DM Mono';
 }
 
 
@@ -99,6 +111,7 @@ label > i {
 .form-element-wrapper {
     display: flex; 
     margin-top: 64px;
+    transform: translate(-28px);
 }
 
 .label-wrapper {
@@ -107,4 +120,24 @@ label > i {
     flex-flow: row nowrap;
     justify-content: center;
     margin-right: 16px;
+}
+
+#mobile-label {
+    position: relative;
+}
+
+.submit-btn {
+    width: 15vw;
+    height: 4vh;
+    border-radius: 24px 24px 24px 24px;
+    padding: 8px;
+    background: linear-gradient(to left, var(--colorAccentSecondary), linen);
+    font-family: "DM Mono";
+    font-size: 1rem;
+    color: black;
+    box-shadow: 1px 1px 1px 1px crimson;
+}
+
+.submit-btn-container {
+    margin: 36px 0 0 0;
 }
