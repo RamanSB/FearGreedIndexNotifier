@@ -21,7 +21,7 @@ body {
     display: grid;
     width: 80vw;
     height: 80vh;
-    margin: 100px auto 0px auto;
+    margin: 100px auto 100px auto;
     background: linear-gradient(270deg, var(--colorPrimary) , var(--colorSecondary));
     box-shadow: 1px 1px 16px 4px var(--colorAccentSecondary);
     grid-template-columns: repeat(2, 1fr);
@@ -131,13 +131,43 @@ label > i {
     height: 4vh;
     border-radius: 24px 24px 24px 24px;
     padding: 8px;
-    background: linear-gradient(to left, var(--colorAccentSecondary), linen);
+    text-transform: uppercase;
+    letter-spacing: 0.045rem;
+    background: linear-gradient(to left, var(--colorAccentSecondary), midnightblue);
     font-family: "DM Mono";
     font-size: 1rem;
-    color: black;
+    color: white;
     box-shadow: 1px 1px 1px 1px crimson;
 }
 
 .submit-btn-container {
     margin: 36px 0 0 0;
+}
+
+.placeholder-feargreed-idx {
+    margin: auto; 
+    width: 36vw;
+    border: 2px solid saddlebrown;
+    margin-top: 12px;
+    min-height: 30vh;
+}
+
+.newsletter-header-container > img {
+    position: absolute;
+    object-fit: contain;
+    margin-right: 48px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 4px salmon;
+    padding: 8px;
+    top: 16%;
+    left: 36%;
+}
+
+.charts-container {
+    border: 2px dashed black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
 }

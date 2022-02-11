@@ -1,0 +1,63 @@
+:root {
+    --colorPrimary: #ffc2b0;
+    --colorSecondary: #fd8b7c;
+    --colorAccent: #ffdb8a;
+    --colorAccentSecondary: cornflowerblue;
+    --colorNeutral: #dfe0df;
+    --fontGradient: linear-gradient(var(--colorNeutral), #ffffff);
+    --mainFont: "DM Mono";
+    --leftContainerInsetMargin: 64px;
+}
+
+.chart {
+    position: relative;
+  }
+  
+  .chart svg {
+    vertical-align: middle;
+  }
+  
+  .chart-actions {
+    margin-top: 24px;
+    display: none;
+  }
+  
+  /* Only display the actions when expanded */
+  .chart-actions {
+    display: block;
+  }
+  
+  .chart-actions button {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    outline: none;
+  }
+  
+  .chart-actions button:hover,
+  .chart-actions button:focus {
+    border: 1px solid var(--white);
+  }
+  
+  .chart-actions .active {
+    background: var(--white);
+    color: var(--blue);
+  }
+
+  .loading-container {
+    height: 0;
+    padding-bottom: 25%;
+    width: 100%;
+  }
+  
+  .loading-container span {
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    top: 30%;
+}
+

@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { WrappedCryptoChart } from './components/CryptoChart';
+import { WrappedFearGreedIndexChart } from './components/FearGreedIndexChart';
+
 
 function App() {
 
   function handleFormSubmit(event: React.SyntheticEvent) {
       event.preventDefault();
+      console.log(`Subscribe button clicked.`);
   }
 
   return (
@@ -13,8 +17,11 @@ function App() {
       <div className="mailing-list-form-container">
         <h1 className="newsletter-header">Subscribe to our</h1>
         <br/>
-        <h1 id="newsletter-header-fear-greed">Fear Greed <br/> Index</h1>
-        <h1 className="newsletter-header">Mobile | Mailing List</h1>
+        <div className="newsletter-header-container">
+          <h1 id="newsletter-header-fear-greed">Fear Greed <br/> Index</h1>
+          <img width={280} height={280} src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index"></img>
+        </div>
+        <h1 className="newsletter-header">SMS | Mailing List</h1>
         <div id="subtext-container">
           <p id="newsletter-subtext">
             Do you find yourself constantly checking the crypto markets? 
@@ -35,14 +42,13 @@ function App() {
             <div className="submit-btn-container">
               <button className="submit-btn" onSubmit={handleFormSubmit}>Click To Subscribe</button>
             </div>
-
-            
           </form>
         </div>
       </div>
-      
-      <div style={{border: "2px dashed black"}}>
-          
+
+      <div className="charts-container">
+          <WrappedCryptoChart/>
+          <WrappedFearGreedIndexChart/>
       </div>
     </div>
   );

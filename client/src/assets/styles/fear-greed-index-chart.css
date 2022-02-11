@@ -1,0 +1,47 @@
+:root {
+    --blue: blue;
+}
+
+.fear-greed-card {
+    background: linear-gradient(30deg, var(--blue) 0%, cornflowerblue 100%);
+    margin: auto;
+    border-radius: 8px;
+    max-width: 32vw;
+    padding: 36px 25px 0;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+}
+
+.fear-greed-chart-actions {
+    text-align: center;
+}
+
+.fear-greed-title {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.035em;
+    color: white;
+}
+
+
+.interval-btn {
+    font-size: 14px;
+    padding: 6px;
+    color: white;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+
+.interval-btn:hover {
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.active {
+    background: white;
+    color: var(--blue);
+    border-radius: 8px;
+}
