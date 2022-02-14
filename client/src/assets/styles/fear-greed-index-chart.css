@@ -7,7 +7,7 @@
     margin: auto;
     border-radius: 8px;
     max-width: 32vw;
-    padding: 36px 25px 0;
+    padding: 24px 18px 0;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
 }
@@ -44,4 +44,12 @@
     background: white;
     color: var(--blue);
     border-radius: 8px;
+}
+
+.fgi-status {
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    display: block;
+    text-shadow: 1px 1px black;
 }

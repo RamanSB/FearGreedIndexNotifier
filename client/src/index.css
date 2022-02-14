@@ -83,19 +83,58 @@ h1 {
     background: none;
     border: none;
     font-size: 1.5em;
-    border-bottom: 4px solid cornflowerblue;
+    border-bottom: 3px solid cornflowerblue;   
 }
+
+form > .form-element-wrapper:first-child > .input-form-fields:not(:focus) {
+    font: bold Consolas, Monaco, monospace;
+    border-right: .1em solid;
+    width: 340px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 8s steps(30, end) 1, 
+            blink-caret .5s 50;
+    animation-fill-mode: forwards;
+}
+
+form > .form-element-wrapper:last-child > .input-form-fields:not(:focus) {
+    animation: blink-caret .5s infinite;
+}
+
+/**
+ * Typing animation with pure CSS. 
+ * Works best in browsers supporting the ch unit.
+ */
+
+ @keyframes typing { 
+    from { 
+         width: 0;
+    } to {
+        width: 90%;
+        border-right: .1em solid;
+    }
+ }
+
+ @keyframes blink-caret { 50% { border-color: transparent; }  to {
+    border-right: none;
+ }}
 
 .input-form-fields::placeholder {
     color: white;
     text-align: start;
     font-family: 'DM Mono';
     margin: none;
+    font-size: 1em;
 }
 
 .input-form-fields:focus {
     outline: none;
     font-family: 'DM Mono';
+    color: white;
+}
+
+.input-form-fields:not(:focus) {
+    color: white;
 }
 
 .input-form-fields:default {
@@ -170,4 +209,10 @@ label > i {
     justify-content: space-between;
     padding: 0px;
     align-items: center;
+}
+
+.disclaimer {
+    margin: 1rem 0 0 var(--leftContainerInsetMargin);
+    color: white;
+    font-family: "DM Mono";
 }
