@@ -1,7 +1,8 @@
 # FearGreedIndexNotifier
 
 ## Current Progress
-![image](https://user-images.githubusercontent.com/13969478/152268673-e98f50f3-aef5-44e8-8a53-068f461e0d04.png)
+![image](https://user-images.githubusercontent.com/13969478/153951319-6b79a148-941f-48ef-903b-1bc3cee50139.png)
+
 
 
 ## Features
