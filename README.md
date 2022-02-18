@@ -8,11 +8,11 @@
 ## Features
 - Responsive Design: UI must look fluid as Screen-Sizes descend.
 - Stripe payment API.
-- Animations.
+- Animations. 
 - Potentially use redux to manage global state...
 
 
-- RHS should display animated images of Cryptocurrency graphs annotated with FearGreedIndex that basically fade-in and out.
+- RHS should display animated images of Cryptocurrency graphs annotated with FearGreedIndex that basically fade-in and out. (x)
 - Twillio messaging support
 - Email API
 - Check DB and run scheduled / CRON jobs to email/text users in DB.
