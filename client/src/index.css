@@ -69,7 +69,7 @@ h1 {
 }
 
 
-.details-form-container {
+.payment-form-container, .details-form-container {
     margin: 24px var(--leftContainerInsetMargin) 0 var(--leftContainerInsetMargin);
     padding: 16px 16px 32px 16px;
     text-align: center;

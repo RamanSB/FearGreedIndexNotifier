@@ -1,9 +1,8 @@
 
-export const PaymentForm = () => {
+export const PreferenceForm = () => {
     return (
         <form>
             
         </form>
     )
-
 }

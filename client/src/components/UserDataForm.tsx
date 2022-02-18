@@ -1,9 +1,8 @@
 import { SubscribeButton } from "./SubscribeButton";
 import React from "react";
 
-
 export const UserDataForm = () => {
-
+    
     let [email, setEmail] = React.useState("");
     let [phoneNumber, setPhoneNumber] = React.useState("");
 
@@ -41,3 +40,4 @@ export const UserDataForm = () => {
       </form>
     );
 }
+
