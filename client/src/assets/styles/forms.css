@@ -1,0 +1,153 @@
+:root {
+  --paymentFormMarginInset: 10%;
+  --widthOfPaynmentFormRows: 80%;
+}
+
+.preference-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-row > h4 {
+  font-size: 2em;
+  font-family: "DM Mono";
+  margin: 24px auto 0 auto;
+  color: white;
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+}
+
+.checkbox > span {
+  color: white;
+  font-family: "DM Mono";
+  font-size: 1.25rem;
+  padding: 0px 8px 0 8px;
+}
+
+.checkbox > input {
+  height: 28px;
+  width: 28px;
+  appearance: none;
+  border: 2px solid var(--colorNeutral);
+  border-radius: 4px;
+  outline: none;
+  background-color: gray;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.checkbox > input:checked {
+  border: 1px solid white;
+  background: greenyellow;
+}
+
+.checkbox > input:active {
+  border: 2px solid #34495e;
+}
+
+.header-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 90%;
+}
+
+.navigation-arrow {
+  color: white;
+  padding: 12px;
+  background: gray;
+  border-radius: 50%;
+  transform: translate(0px, 10px);
+  box-shadow: 0px 0px 4px 4px white;
+}
+
+.payment-form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+  width: 80%;
+  border: 2px dashed black;
+}
+
+.card-icon {
+  text-align: left;
+  display: flex;
+  margin: 4px 0 0 12px;
+  color: white;
+}
+
+.card-number-input {
+  width: var(--widthOfPaynmentFormRows);
+  border: none;
+  display: block;
+  border-radius: 4px;
+  padding: 8px 0 8px 0;
+  margin-left: var(--paymentFormMarginInset);
+  margin-top: 2px;
+  font-family: "DM Mono";
+  letter-spacing: 0.1em;
+}
+
+.card-number-input:focus {
+  outline: none;
+  font-family: "DM Mono";
+}
+
+.card-number-input[type="number"]::-webkit-inner-spin-button,
+.card-number-input[type="number"]::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.card-number-container {
+  text-align: left;
+  margin: 12px 0 0 0;
+}
+
+.card-number-container > label {
+  font-family: "DM Mono";
+  margin-left: var(--paymentFormMarginInset);
+  color: white;
+}
+
+.expiry-cvc-container {
+  display: block;
+  border: 1px solid orange;
+  margin-top: 8px;
+  margin-left: var(--paymentFormMarginInset);
+  width: var(--widthOfPaynmentFormRows);
+  display: flex;
+}
+
+.expiry-container {
+  display: inline-block;
+  text-align: left;
+  flex: 0.5;
+}
+
+.cvc-container {
+  display: inline-block;
+  text-align: left;
+  flex: 0.5;
+}
+
+input {
+  padding: 8px 0 8px 0;
+  width: 90%;
+  font-family: "DM Mono";
+  letter-spacing: 0.1em;
+}
+
+.expiry-cvc-container > div > label {
+  display: block;
+  color: white;
+  font-family: "DM Mono";
+}

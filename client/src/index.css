@@ -1,104 +1,116 @@
 :root {
-    --colorPrimary: #ffc2b0;
-    --colorSecondary: #fd8b7c;
-    --colorAccent: #ffdb8a;
-    --colorAccentSecondary: cornflowerblue;
-    --colorNeutral: #dfe0df;
-    --fontGradient: linear-gradient(var(--colorNeutral), #ffffff);
-    --mainFont: "DM Mono";
-    --leftContainerInsetMargin: 64px;
+  --colorPrimary: #ffc2b0;
+  --colorSecondary: #fd8b7c;
+  --colorAccent: #ffdb8a;
+  --colorAccentSecondary: cornflowerblue;
+  --colorNeutral: #dfe0df;
+  --fontGradient: linear-gradient(var(--colorNeutral), #ffffff);
+  --mainFont: "DM Mono";
+  --leftContainerInsetMargin: 64px;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--colorNeutral);
-    border: 2px solid black;
-    margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--colorNeutral);
+  border: 2px solid black;
+  margin: auto;
 }
 
 .app-container {
-    display: grid;
-    width: 80vw;
-    height: 80vh;
-    margin: 100px auto 100px auto;
-    background: linear-gradient(270deg, var(--colorPrimary) , var(--colorSecondary));
-    box-shadow: 1px 1px 16px 4px var(--colorAccentSecondary);
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  width: 80vw;
+  height: 80vh;
+  margin: 100px auto 100px auto;
+  background: linear-gradient(
+    270deg,
+    var(--colorPrimary),
+    var(--colorSecondary)
+  );
+  box-shadow: 1px 1px 16px 4px var(--colorAccentSecondary);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 h1 {
-    font-family: var(--mainFont);
-    letter-spacing: 0.03em;
-    color: var(--colorNeutral);
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 2.5em;
+  font-family: var(--mainFont);
+  letter-spacing: 0.03em;
+  color: var(--colorNeutral);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 2.5em;
 }
 
 .newsletter-header {
-    margin: 24px 0px 0px var(--leftContainerInsetMargin);
-    text-transform: capitalize;
+  margin: 24px 0px 0px var(--leftContainerInsetMargin);
+  text-transform: capitalize;
 }
 
 #newsletter-header-fear-greed {
-    margin-left: var(--leftContainerInsetMargin);
-    font-size: 5em;
-    color: white;
+  margin-left: var(--leftContainerInsetMargin);
+  font-size: 5em;
+  color: white;
 }
 
 .mailing-list-form-container > h1:first-child {
-    margin: 72px 0 0 var(--leftContainerInsetMargin);
-    
+  margin: 72px 0 0 var(--leftContainerInsetMargin);
 }
 
 #details-form {
-    display: inline-block;
+  display: inline-block;
 }
 
 #newsletter-subtext {
-    margin: 36px 0 0 var(--leftContainerInsetMargin);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-right: 36px;
-    letter-spacing: 0.035em;
-    font-size: 1.7em;
-    line-height: 1.4em;
-    color: white;
+  margin: 36px 0 0 var(--leftContainerInsetMargin);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-right: 36px;
+  letter-spacing: 0.035em;
+  font-size: 1.7em;
+  line-height: 1.4em;
+  color: white;
 }
 
+.payment-form-container,
+.details-form-container,
+.preference-form-container {
+  margin: 24px var(--leftContainerInsetMargin) 0 var(--leftContainerInsetMargin);
+  text-align: center;
+  border: 2px solid blanchedalmond;
+  box-shadow: 1px 1px 4px 2px crimson;
+}
 
-.payment-form-container, .details-form-container {
-    margin: 24px var(--leftContainerInsetMargin) 0 var(--leftContainerInsetMargin);
-    padding: 16px 16px 32px 16px;
-    text-align: center;
-    border: 2px solid blanchedalmond;
-    box-shadow: 1px 1px 4px 2px crimson;
+.payment-form-container {
+  padding: 64px 100px 100px 64px;
+}
+
+.details-form-container,
+.preference-form-container {
+  padding: 16px 16px 32px 16px;
 }
 
 .input-form-fields {
-    padding: 6px 0 12px 0;
-    width: 340px;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    border-bottom: 3px solid cornflowerblue;   
+  padding: 6px 0 12px 0;
+  width: 340px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  border-bottom: 3px solid cornflowerblue;
 }
 
 form > .form-element-wrapper:first-child > .input-form-fields:not(:focus) {
-    font: bold Consolas, Monaco, monospace;
-    border-right: .1em solid;
-    width: 340px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 8s steps(30, end) 1, 
-            blink-caret .5s 50;
-    animation-fill-mode: forwards;
+  font: bold Consolas, Monaco, monospace;
+  border-right: 0.1em solid;
+  width: 340px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 8s steps(30, end) 1, blink-caret 0.5s 50;
+  animation-fill-mode: forwards;
 }
 
 form > .form-element-wrapper:last-child > .input-form-fields:not(:focus) {
-    animation: blink-caret .5s infinite;
+  animation: blink-caret 0.5s infinite;
 }
 
 /**
@@ -106,113 +118,121 @@ form > .form-element-wrapper:last-child > .input-form-fields:not(:focus) {
  * Works best in browsers supporting the ch unit.
  */
 
- @keyframes typing { 
-    from { 
-         width: 0;
-    } to {
-        width: 90%;
-        border-right: .1em solid;
-    }
- }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+    border-right: 0.1em solid;
+  }
+}
 
- @keyframes blink-caret { 50% { border-color: transparent; }  to {
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+  to {
     border-right: none;
- }}
+  }
+}
 
 .input-form-fields::placeholder {
-    color: white;
-    text-align: start;
-    font-family: 'DM Mono';
-    margin: none;
-    font-size: 1em;
+  color: white;
+  text-align: start;
+  font-family: "DM Mono";
+  margin: none;
+  font-size: 1em;
 }
 
 .input-form-fields:focus {
-    outline: none;
-    font-family: 'DM Mono';
-    color: white;
+  outline: none;
+  font-family: "DM Mono";
+  color: white;
 }
 
 .input-form-fields:not(:focus) {
-    color: white;
+  color: white;
 }
 
 .input-form-fields:default {
-    font-family: 'DM Mono';
+  font-family: "DM Mono";
 }
-
 
 label > i {
-    color: white
+  color: white;
 }
 
-
 .form-element-wrapper {
-    display: flex; 
-    margin-top: 64px;
-    transform: translate(-28px);
+  display: flex;
+  margin-top: 64px;
+  transform: translate(-28px);
 }
 
 .label-wrapper {
-    width: 40px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin-right: 16px;
+  width: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-right: 16px;
 }
 
 #mobile-label {
-    position: relative;
+  position: relative;
 }
 
 .submit-btn {
-    width: 15vw;
-    height: 4vh;
-    border-radius: 24px 24px 24px 24px;
-    padding: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.045rem;
-    background: linear-gradient(to left, var(--colorAccentSecondary), midnightblue);
-    font-family: "DM Mono";
-    font-size: 1rem;
-    color: white;
-    box-shadow: 1px 1px 1px 1px crimson;
+  width: 15vw;
+  height: 4vh;
+  border-radius: 24px 24px 24px 24px;
+  padding: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.045rem;
+  background: linear-gradient(
+    to left,
+    var(--colorAccentSecondary),
+    midnightblue
+  );
+  font-family: "DM Mono";
+  font-size: 1rem;
+  color: white;
+  box-shadow: 1px 1px 1px 1px crimson;
 }
 
 .submit-btn-container {
-    margin: 36px 0 0 0;
+  margin: 36px 0 0 0;
 }
 
 .placeholder-feargreed-idx {
-    margin: auto; 
-    width: 36vw;
-    border: 2px solid saddlebrown;
-    margin-top: 12px;
-    min-height: 30vh;
+  margin: auto;
+  width: 36vw;
+  border: 2px solid saddlebrown;
+  margin-top: 12px;
+  min-height: 30vh;
 }
 
 .newsletter-header-container > img {
-    position: absolute;
-    object-fit: contain;
-    margin-right: 48px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 4px 4px salmon;
-    padding: 8px;
-    top: 16%;
-    left: 36%;
+  position: absolute;
+  object-fit: contain;
+  margin-right: 48px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px 4px salmon;
+  padding: 8px;
+  top: 16%;
+  left: 36%;
 }
 
 .charts-container {
-    border: 2px dashed black;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    padding: 0px;
-    align-items: center;
+  border: 2px dashed black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 0px;
+  align-items: center;
 }
 
 .disclaimer {
-    margin: 1rem 0 0 var(--leftContainerInsetMargin);
-    color: white;
-    font-family: "DM Mono";
+  margin: 1rem 0 0 var(--leftContainerInsetMargin);
+  color: white;
+  font-family: "DM Mono";
 }
