@@ -12,10 +12,10 @@
 
 .header-row > h4 {
   font-size: 2em;
-  font-family: "DM Mono";
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin: 24px auto 0 auto;
   color: white;
-  text-decoration: underline;
 }
 
 .checkbox {
@@ -42,11 +42,18 @@
   background-color: gray;
   cursor: pointer;
   transition-duration: 0.3s;
+  animation-name: glow-nav-arrow;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier();
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
 }
 
 .checkbox > input:checked {
   border: 1px solid white;
-  background: greenyellow;
+  background: cornflowerblue;
+  box-shadow: 0px 0px 4px 4px whitesmoke;
+  animation: none;
 }
 
 .checkbox > input:active {
@@ -64,10 +71,24 @@
 .navigation-arrow {
   color: white;
   padding: 12px;
-  background: gray;
-  border-radius: 50%;
+  background: cornflowerblue;
+  border-radius: 2%;
   transform: translate(0px, 10px);
-  box-shadow: 0px 0px 4px 4px white;
+  box-shadow: 0px 0px 6px 4px white;
+  animation-name: glow-nav-arrow;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier();
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow-nav-arrow {
+  from {
+    box-shadow: 0px 0px 1px 2px white;
+  }
+  to {
+    box-shadow: 0px 0px 6px 4px white;
+  }
 }
 
 .payment-form {
@@ -75,7 +96,6 @@
   flex-flow: column nowrap;
   margin: auto;
   width: 80%;
-  border: 2px dashed black;
 }
 
 .card-icon {
@@ -140,7 +160,7 @@
 }
 
 input {
-  padding: 8px 0 8px 0;
+  padding: 8px 4px 8px 4px;
   width: 90%;
   font-family: "DM Mono";
   letter-spacing: 0.1em;
@@ -150,4 +170,25 @@ input {
   display: block;
   color: white;
   font-family: "DM Mono";
+}
+
+.pay-btn-container {
+  box-shadow: 1px;
+}
+
+.pay-btn {
+  width: var(--widthOfPaynmentFormRows);
+  /* background: cornflowerblue; */
+  background: cornflowerblue;
+  padding: 8px;
+  margin-top: 18px;
+  border-radius: 4px;
+  font-size: 1.25em;
+  font-family: "DM Mono";
+  color: white;
+  border: 0px solid white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }

@@ -7,10 +7,13 @@ export const PaymentForm = () => {
         style={{
           display: "inline",
           padding: "8px 0 0px 0",
-          border: "2px solid cornflowerblue",
+          border: "2px solid white",
+          background: "cornflowerblue",
           width: "8rem",
           marginLeft: "10%",
           borderRadius: "8px",
+          boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",
+          transition: "all 0.3s ease 0s",
         }}
       >
         <i className="fa-solid  fa-credit-card card-icon"></i>
@@ -50,8 +53,11 @@ export const PaymentForm = () => {
         </div>
         <div className="cvc-container">
           <label>Postal Code</label>
-          <input type="number" placeholder="WS11 1DB" />
+          <input type="text" placeholder="WS11 1DB" />
         </div>
+      </div>
+      <div className="pay-btn-container">
+        <button className="pay-btn">Pay</button>
       </div>
     </form>
   );

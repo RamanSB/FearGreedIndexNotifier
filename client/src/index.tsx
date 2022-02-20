@@ -6,7 +6,7 @@ import { WrappedFearGreedIndexChart } from "./components/FearGreedIndexChart";
 import { UserDataForm } from "./components/UserDataForm";
 import { MailingListHeader } from "./components/MailingListHeader";
 import { MailingListSubtext } from "./components/MailingListSubtext";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { PaymentForm } from "./components/StripePaymentForm";
 import { PreferenceForm } from "./components/PreferenceForm";
 
@@ -32,6 +32,11 @@ function App() {
             element={
               <>
                 <div className="payment-form-container">
+                  <div className="header-row">
+                    <Link to={"/preferences"}>
+                      <i className="fa-solid fa-arrow-left navigation-arrow"></i>
+                    </Link>
+                  </div>
                   <PaymentForm />
                 </div>
               </>
